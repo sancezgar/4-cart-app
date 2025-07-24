@@ -1,0 +1,7 @@
+<h2>Catalogo de productos App</h2>
+<hr class="border border-2 opacity-100">
+<div class="row">
+    @for (product of products; track $index) {
+        <product-card [product]="product" class="col-4 my-2" (productEventEmmiter)="onAddCart($event)"/>
+    }
+</div>
