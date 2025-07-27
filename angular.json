@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "3-cart-app": {
+    "6-cart-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:class": {
@@ -38,7 +38,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/3-cart-app",
+            "outputPath": "dist/6-cart-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -84,10 +84,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "3-cart-app:build:production"
+              "buildTarget": "6-cart-app:build:production"
             },
             "development": {
-              "buildTarget": "3-cart-app:build:development"
+              "buildTarget": "6-cart-app:build:development"
             }
           },
           "defaultConfiguration": "development"
